@@ -1,3 +1,4 @@
+//INICIO PROGRAMA
 const nombre = prompt("Bienvenido al Banco Estafa.\nPor favor ingrese su nombre");
 
 let resultadoF = seleccionTramite();
@@ -10,7 +11,7 @@ if (resultadoF == 1) {
 }
 
 //FUNCIONES
-
+//FUNCIÓN DE SELECCIÓN DE TRÁMITE A REALIZAR
 function seleccionTramite() {
     let opcion = 0;
     const opcionBanco = ", Por Favor seleccione trámite a realizar:\n 1. Créditos \n 2. Tarjeta de Crédito \n";
@@ -21,15 +22,15 @@ function seleccionTramite() {
 
         switch (opcion) {
             case 1: {
-                alert(nombre + " Seleccionó Crédito");
+                alert(nombre + " seleccionó Crédito");
                 break;
             }
             case 2: {
-                alert(nombre + " Seleccionó Tarjeta de Crédito");
+                alert(nombre + " seleccionó Tarjeta de Crédito");
                 break;
             }
             default: {
-                alert(nombre + " La opción ingresada no es correcta.\n Vuelve a intentarlo");
+                alert(nombre + " la opción ingresada no es correcta.\n Vuelve a intentarlo");
                 break;
             }
         }
