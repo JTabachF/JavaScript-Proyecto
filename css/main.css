@@ -42,3 +42,7 @@ object-fit: contain;
 .margenSimTarjeta {
     margin: 2rem 10rem;
 }
+
+.bordesCard {
+    border: 10px solid rgba(0, 0, 0, 0.619);
+}

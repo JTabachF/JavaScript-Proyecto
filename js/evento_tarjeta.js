@@ -1,5 +1,5 @@
 //Captura de datos
-let botonTarjeta = document.getElementById("boton");
+let botonTarjeta = document.getElementById("botonTarjeta");
 botonTarjeta.addEventListener("click", cargarTarjeta);
 
 const inputNombre = document.getElementById("input-nombre");
@@ -17,124 +17,19 @@ function cargarTarjeta() {
 		
 		if (inputRenta.value>=1 && inputRenta.value<1000){
 
-		var cardTarjeta = document.getElementById("lista-tarjetas")
-		cardTarjeta.innerHTML = `
-		<div class="row row-cols-1 row-cols-md-3 g-4">
-		<div class="col">
-		  <div class="card h-100">
-			<img src="./recursos/visagold.jpg" class="card-img-top" alt="Imagen Tarjeta">
-			<div class="card-body">
-			  <h5 class="card-title">Tarjeta Visa Gold</h5>
-			  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta Visa Gold con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-			  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-			  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-			</div>
-		  </div>
-		</div>
-		<div class="col">
-		  <div class="card h-100">
-			<img src="./recursos/mastercardgold.jfif" class="card-img-top" alt="Imagen Tarjeta">
-			<div class="card-body">
-			  <h5 class="card-title">Tarjeta Mastercard Gold</h5>
-			  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta Mastercard Gold con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-			  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-			  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-			</div>
-		  </div>
-		</div>
-		<div class="col">
-		  <div class="card h-100">
-			<img src="./recursos/americangold.jfif" class="card-img-top" alt="Imagen Tarjeta">
-			<div class="card-body">
-			  <h5 class="card-title">Tarjeta American Gold</h5>
-			  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta American Gold con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-			  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-			  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-			</div>
-		  </div>
-		</div>
-		</div>`;  
-		event.preventDefault();
+			var cardTarjeta = document.getElementById("lista-tarjetas")
+			cardTarjeta.innerHTML = stringTarjeta ("Tarjeta Visa Gold", "Tarjeta Mastercard Gold", "Tarjeta American Gold", "visagold.jpg", "mastercardgold.jfif", "americangold.jfif");    
+			event.preventDefault();
 
 		}else if (inputRenta.value>=1000 && inputRenta.value<2000){
 
-		var cardTarjeta = document.getElementById("lista-tarjetas")
-		cardTarjeta.innerHTML = `
-		<div class="row row-cols-1 row-cols-md-3 g-4">
-		<div class="col">
-		  <div class="card h-100">
-			<img src="./recursos/visaplatinum.jpg" class="card-img-top" alt="Imagen Tarjeta">
-			<div class="card-body">
-			  <h5 class="card-title">Tarjeta Visa Platinum</h5>
-			  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta Visa Platinum con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-			  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-			  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-			</div>
-		  </div>
-		</div>
-		<div class="col">
-		  <div class="card h-100">
-			<img src="./recursos/mastercardplatinum.jfif" class="card-img-top" alt="Imagen Tarjeta">
-			<div class="card-body">
-			  <h5 class="card-title">Tarjeta Mastercard Platinum</h5>
-			  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta Mastercard Platinum con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-			  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-			  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-			</div>
-		  </div>
-		</div>
-		<div class="col">
-		  <div class="card h-100">
-			<img src="./recursos/americanaerolinea.jfif" class="card-img-top" alt="Imagen Tarjeta">
-			<div class="card-body">
-			  <h5 class="card-title">Tarjeta American Aerolinea</h5>
-			  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta American Aerolinea con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-			  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-			  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-			</div>
-		  </div>
-		</div>
-		</div>`;  
-		event.preventDefault();
+			var cardTarjeta = document.getElementById("lista-tarjetas")
+			cardTarjeta.innerHTML = stringTarjeta ("Tarjeta Visa Platinum", "Tarjeta Mastercard Platinum", "Tarjeta American Aerolinea", "visasiplatinum.jpg", "mastercardplatinum.jfif", "americanaerolinea.jfif");  
+			event.preventDefault();
 		}else if (inputRenta.value>=2000){
 
 			var cardTarjeta = document.getElementById("lista-tarjetas")
-			cardTarjeta.innerHTML = `
-			<div class="row row-cols-1 row-cols-md-3 g-4">
-			<div class="col">
-			  <div class="card h-100">
-				<img src="./recursos/visasignature.jpg" class="card-img-top" alt="Imagen Tarjeta">
-				<div class="card-body">
-				  <h5 class="card-title">Tarjeta Visa Signature</h5>
-				  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta Visa Signature con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-				  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-				  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-				</div>
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card h-100">
-				<img src="./recursos/mastercardblack.jfif" class="card-img-top" alt="Imagen Tarjeta">
-				<div class="card-body">
-				  <h5 class="card-title">Tarjeta Mastercard Black</h5>
-				  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta Mastercard Black con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-				  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-				  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-				</div>
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card h-100">
-				<img src="./recursos/americanplatinum.jfif" class="card-img-top" alt="Imagen Tarjeta">
-				<div class="card-body">
-				  <h5 class="card-title">Tarjeta American Platinum</h5>
-				  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta American Platinum con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
-				  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-				  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
-				</div>
-			  </div>
-			</div>
-			</div>`;  
+			cardTarjeta.innerHTML = stringTarjeta ("Tarjeta Visa Signature", "Tarjeta Mastercard Black", "Tarjeta American Platinum", "visasignature.jpg", "mastercardblack.jfif", "americanplatinum.jfif");  
 			event.preventDefault();
 		}									
     } else {
@@ -150,6 +45,56 @@ function cargarTarjeta() {
 
 }
 
+//MouseOver y MouseUp
 botonTarjeta.onmouseover = () => {
     botonTarjeta.style.backgroundColor = "red";
+}
+botonSimulacion.onmouseout = () => {
+    botonSimulacion.style.backgroundColor = "#0d6efd";
+}
+
+//Borrar LocalStorage
+let botonBorrarLocalStorage = document.getElementById("botonBorrarLocalStorage");
+botonBorrarLocalStorage.addEventListener("click", localStorage.clear());
+
+//Función retorna modificación del DOM
+function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjetaAmerican, imgVisa, imgMastercard, imgAmerican) {
+
+	return `
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+	<div class="col">
+	  <div class="card h-100">
+		<img src="./recursos/${imgVisa}" class="card-img-top" alt="Imagen Tarjeta">
+		<div class="card-body">
+		  <h5 class="card-title">${nombreTarjetaVisa}</h5>
+		  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta ${nombreTarjetaVisa} con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
+		  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
+		  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
+		</div>
+	  </div>
+	</div>
+	<div class="col">
+	  <div class="card h-100">
+		<img src="./recursos/${imgMastercard}" class="card-img-top" alt="Imagen Tarjeta">
+		<div class="card-body">
+		  <h5 class="card-title">${nombreTarjetaMastercard}</h5>
+		  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra ${nombreTarjetaMastercard} con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
+		  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
+		  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
+		</div>
+	  </div>
+	</div>
+	<div class="col">
+	  <div class="card h-100">
+		<img src="./recursos/${imgAmerican}" class="card-img-top" alt="Imagen Tarjeta">
+		<div class="card-body">
+		  <h5 class="card-title">${nombreTarjetaAmerican}</h5>
+		  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra ${nombreTarjetaAmerican} con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
+		  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
+		  <button type="submit" class="btn btn-primary">Solicitar Tarjeta</button>
+		</div>
+	  </div>
+	</div>
+	</div>`
+
 }

@@ -1,5 +1,5 @@
 //Captura de datos
-let botonSimulacion = document.getElementById("boton");
+let botonSimulacion = document.getElementById("botonSimulacion");
 botonSimulacion.addEventListener("click", cargarSimulaciones);
 
 const inputNombre = document.getElementById("input-nombre");
@@ -90,7 +90,13 @@ if (arraySimulaciones.length > 0) {
     const eliminar = document.getElementById("sinSimu");
     sinSimu.parentElement.removeChild(eliminar);
 }
-//MouseOver
+//MouseOver y MouseUp
 botonSimulacion.onmouseover = () => {
     botonSimulacion.style.backgroundColor = "red";
 }
+botonSimulacion.onmouseout = () => {
+    botonSimulacion.style.backgroundColor = "#0d6efd";
+}
+//Borrar LocalStorage
+let botonBorrarLocalStorage = document.getElementById("botonBorrarLocalStorage");
+botonBorrarLocalStorage.addEventListener("click", localStorage.clear());
