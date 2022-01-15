@@ -1,9 +1,14 @@
-
+body {
+    margin-top: 4.7rem;
+}
 
 .fondo {
     background:white;
     border-style: groove 4px;
     border: none;
+}
+.navbar {
+    opacity: 0.8;
 }
 .section {
     text-align: center;
@@ -12,7 +17,7 @@
     flex-direction: column;
     align-items: center;
 }
-.carrousel {
+.imgCarrousel {
     max-width: 100vw;
     max-height: 90vh;
     min-width: 100vw;
@@ -45,4 +50,10 @@ object-fit: contain;
 
 .bordesCard {
     border: 10px solid rgba(0, 0, 0, 0.619);
+}
+.overflowHTML {
+    overflow: hidden;
+}
+.lineHr {
+    line-height: 20px black;
 }
