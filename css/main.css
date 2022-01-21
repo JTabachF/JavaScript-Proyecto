@@ -7,6 +7,7 @@ body {
     border-style: groove 4px;
     border: none;
 }
+/*CSS index*/
 .navbar {
     opacity: 0.8;
 }
@@ -23,6 +24,7 @@ body {
     min-width: 100vw;
     min-height: 90vh;
     object-fit:fill;
+    opacity: 0.8;
 }
 .colorText {
     color:whitesmoke;
@@ -55,5 +57,5 @@ object-fit: contain;
     overflow: hidden;
 }
 .lineHr {
-    line-height: 20px black;
+    border-color: 20px black;
 }

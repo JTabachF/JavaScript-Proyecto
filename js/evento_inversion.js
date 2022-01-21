@@ -52,8 +52,8 @@ $(document).ready(function () {
 
 			return `
 	<div class="row row-cols-1 row-cols-md-3 g-4">
-	<div id="cardDep1" class="col"> OPCIÓN 1
-	  <div class="card h-100 bordesCard">
+	<div id="cardDep1" class="col" onmouseover=animacionInv1()> OPCIÓN 1
+	  <div class="card h-100">
 	  	<p class="card-title">Tipo Inversión: <strong>${tipoInversion}</strong></p>
 	  	<p class="card-text">Nombres: <strong>${inputNombre.value}</strong></p>
 	  	<p class="card-text">Apellidos: <strong>${inputApellido.value}</strong></p>
@@ -66,7 +66,7 @@ $(document).ready(function () {
 	  <button id="solEv1" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
 		</div>
 	</div>
-	<div id="cardDep2" class="col"> OPCIÓN 2
+	<div id="cardDep2" class="col" onmouseover=animacionInv2()> OPCIÓN 2
 	  <div class="card h-100">
 	  	<p class="card-title">Tipo Inversión: <strong>${tipoInversion}</strong></p>
 	  	<p class="card-text">Nombres: <strong>${inputNombre.value}</strong></p>
@@ -80,7 +80,7 @@ $(document).ready(function () {
 	    <button id="solEv2" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
 	  </div>
 	</div>
-	<div id="cardDep3" class="col"> OPCIÓN 3
+	<div id="cardDep3" class="col" onmouseover=animacionInv3()> OPCIÓN 3
 	  <div class="card h-100">
 	  	<p class="card-title">Tipo Inversión: <strong>${tipoInversion}</strong></p>
 	  	<p class="card-text">Nombres: <strong>${inputNombre.value}</strong></p>

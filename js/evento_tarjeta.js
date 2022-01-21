@@ -61,7 +61,7 @@ function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjet
 
 	return `
 	<div class="row row-cols-1 row-cols-md-3 g-4">
-	<div id="tarjetaMod1" class="col" onmouseover=mouseoverAnimacion1()>
+	<div id="tarjetaMod1" class="col" onmouseover=animacionCard1()>
 	  <div class="card h-100">
 		<img src="./recursos/${imgVisa}" class="card-img-top" alt="Imagen Tarjeta">
 		<div class="card-body pruebaM">
@@ -72,7 +72,7 @@ function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjet
 		</div>
 	  </div>
 	</div>
-	<div id="tarjetaMod2" class="col" onmouseover=mouseoverAnimacion2()>
+	<div id="tarjetaMod2" class="col" onmouseover=animacionCard2()>
 	  <div class="card h-100">
 		<img src="./recursos/${imgMastercard}" class="card-img-top kkko" alt="Imagen Tarjeta">
 		<div class="card-body">
@@ -83,7 +83,7 @@ function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjet
 		</div>
 	  </div>
 	</div>
-	<div id="tarjetaMod3" class="col" onmouseover=mouseoverAnimacion3()>
+	<div id="tarjetaMod3" class="col" onmouseover=animacionCard3()>
 	  <div class="card h-100">
 		<img src="./recursos/${imgAmerican}" class="card-img-top kkko" alt="Imagen Tarjeta">
 		<div class="card-body">

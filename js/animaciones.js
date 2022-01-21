@@ -1,6 +1,6 @@
 //animación Tarjetas
 $("#botonTarjeta").click(function(event){
-    $("#eliminarMain").slideUp(300);
+    $("#eliminarMain").slideUp(500);
     $("#solicitarTarjetaa").css({'border-style':'solid','border-color':'black'});
 });
 
@@ -41,18 +41,61 @@ setTimeout(() => {
 }, 300); 
 }
 
-function mouseoverAnimacion1(){
+function animacionCard1(){
     $('#tarjetaMod1').css({'opacity': '1'});
     $('#tarjetaMod2').css({'opacity': '0.5'});
     $('#tarjetaMod3').css({'opacity': '0.5'});
 }
-function mouseoverAnimacion2(){
+function animacionCard2(){
     $('#tarjetaMod1').css({'opacity': '0.5'});
     $('#tarjetaMod2').css({'opacity': '1'});
     $('#tarjetaMod3').css({'opacity': '0.5'});
 }
-function mouseoverAnimacion3(){
+function animacionCard3(){
     $('#tarjetaMod1').css({'opacity': '0.5'});
     $('#tarjetaMod2').css({'opacity': '0.5'});
     $('#tarjetaMod3').css({'opacity': '1'});
 }
+
+//Animaciones Index
+
+$(".imgTamano").mouseover(function(){
+    console.log("Funciona")
+    $(".imgTamano").css({'transform': 'rotateY(180deg)'});
+    $('.imgTamano').css({'transform-style': 'preserve-3d'});
+})
+$(".imgTamano").mouseout(function(){
+    console.log("Funciona")
+    $(".imgTamano").css({'transform': 'rotateY(0deg)'});
+    $('.imgTamano').css({'transform-style': 'preserve-3d'});
+})
+
+//Animaciones Inversion
+
+$("#botonInversion").click(function(event){
+    $("#eliminarMain").slideUp(500);
+});
+
+function animacionInv1(){
+    $('#cardDep1').css({'opacity': '1'});
+    $('#cardDep2').css({'opacity': '0.5'});
+    $('#cardDep3').css({'opacity': '0.5'});
+}
+function animacionInv2(){
+    $('#cardDep1').css({'opacity': '0.5'});
+    $('#cardDep2').css({'opacity': '1'});
+    $('#cardDep3').css({'opacity': '0.5'});
+}
+function animacionInv3(){
+    $('#cardDep1').css({'opacity': '0.5'});
+    $('#cardDep2').css({'opacity': '0.5'});
+    $('#cardDep3').css({'opacity': '1'});
+}
+
+
+
+
+//function animImgIndexCard(){
+//    $('.imgTamano').css({'transform': 'rotateY(360deg)'});
+ //   $('.imgTamano').css({'transform-style': 'preserve-3d'});
+//}

@@ -18,6 +18,7 @@
 </head>
 
 <body class="fondo">
+     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand active letraGrande" href="#">Banco Estafa</a>
@@ -43,6 +44,7 @@
             </div>
         </div>
     </nav>
+     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -51,13 +53,19 @@
         </div>
         <div class="carousel-inner">
             <div id="imagenC1" class="carousel-item active">
-                <img src="./recursos/1.png" class="d-block w-100 imgCarrousel" alt="Imagen Banco">
+                <video class="img-fluid imgCarrousel" autoplay loop muted>
+                    <source src="./recursos/v1.mp4" type="video/mp4"/>
+                </video>
             </div>
             <div id="imagenC2" class="carousel-item">
-                <img src="./recursos/2.jpg" class="d-block w-100 imgCarrousel" alt="Imagen Banco">
+                <video class="img-fluid imgCarrousel" autoplay loop muted>
+                    <source src="./recursos/v2.mp4" type="video/mp4"/>
+                </video>
             </div>
             <div id="imagenC3" class="carousel-item">
-                <img src="./recursos/3.jpg" class="d-block w-100 imgCarrousel" alt="Imagen Banco">
+                <video class="img-fluid imgCarrousel" autoplay loop muted>
+                    <source src="./recursos/v3.mp4" type="video/mp4"/>
+                </video>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -71,6 +79,7 @@
     </div>
     
     <hr>
+     <!-- Tarjetas de Productos Bancarios -->
     <main class="overflowHTML">
         <div class="row orden">
             <div class="col-sm-6">
@@ -162,4 +171,5 @@
     </footer>   
 </body>
 <script src="./js/api.js"></script>
+<script src="./js/animaciones.js"></script>
 </html>

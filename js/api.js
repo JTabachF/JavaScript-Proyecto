@@ -1,3 +1,4 @@
+//APPI en index.html
 function apiFinanciera(){
     
     fetch('https://mindicador.cl/api').then(function(response) {
@@ -97,32 +98,17 @@ function apiFinanciera(){
     }).catch(function(error) {
         console.log('Requestfailed', error);
     });
-
 }
 /*
-<div class="table-responsive">
-  <table class="table align-middle">
-    <thead>
-      <tr>
-        PRUEBA tr
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        ...
-      </tr>
-      <tr class="align-bottom">
-        ...
-      </tr>
-      <tr>
-        <td>PRUEBA TD</td>
-        <td>...</td>
-        <td class="align-top">This cell is aligned to the top.</td>
-        <td>...</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+function stringAPI(uf, ivp, dolar, dolar_intercambio, euro, ipc, utm, imacec, tpm, tasa_desempleo, bitcoin) {
+    do {
+        return `
+        <td>${todoResultados.uf.nombre}</td>
+        <td>$ ${todoResultados.uf.valor}</td>
+        <td>${todoResultados.uf.unidad_medida}</td>
+        <td>${todoResultados.uf.fecha}</td>`
+}   while (i < 5);
+*/
 
 
 
