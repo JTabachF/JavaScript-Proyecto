@@ -63,7 +63,7 @@ $(document).ready(function () {
 	  	<h3 class="card-text">Monto a ganar: ${(tasaInteres*inputPlazoInversion.value)*inputMontoInversion.value}</h3>
 	  	<h3 class="card-text">Monto Total a recibir: ${((tasaInteres*inputPlazoInversion.value)*inputMontoInversion.value) + parseInt(inputMontoInversion.value)}</h3>
 	  
-	  <button id="solEv1" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
+	  <button id="solEv1" onclick="clickAnimacionInv1()" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
 		</div>
 	</div>
 	<div id="cardDep2" class="col" onmouseover=animacionInv2()> OPCIÓN 2
@@ -77,7 +77,7 @@ $(document).ready(function () {
 	  	<h3 class="card-text">Monto a ganar: ${(tasaInteresOpcion2*plazo2)*inputMontoInversion.value}</h3>
 	  	<h3 class="card-text">Monto Total a recibir: ${((tasaInteresOpcion2*plazo2)*inputMontoInversion.value) + parseInt(inputMontoInversion.value)}</h3>
 	  
-	    <button id="solEv2" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
+	    <button id="solEv2" onclick="clickAnimacionInv2()" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
 	  </div>
 	</div>
 	<div id="cardDep3" class="col" onmouseover=animacionInv3()> OPCIÓN 3
@@ -91,7 +91,7 @@ $(document).ready(function () {
 	  	<h3 class="card-text">Monto a ganar: ${(tasaInteresOpcion3*plazo3)*inputMontoInversion.value}</h3>
 	  	<h3 class="card-text">Monto Total a recibir: ${((tasaInteresOpcion3*plazo3)*inputMontoInversion.value) + parseInt(inputMontoInversion.value)}</h3>
 	  
-	    <button id="solEv3" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
+	    <button id="solEv3" onclick="clickAnimacionInv3()" type="button" class="btn btn-primary">Solicitar Depósito a Plazo</button>
 	  </div>
 	</div>
 	</div>`

@@ -74,7 +74,7 @@ function imprimirSimulaciones(array) {
           <h3 class="card-text">Monto Cuota a pagar: ${((simulaciones.monto/simulaciones.cuotas)*1.19).toFixed(0)}</h3>
           <h3 class="card-text">Monto Total a Pagar: ${(((simulaciones.monto/simulaciones.cuotas)*1.19)*simulaciones.cuotas).toFixed(0)}</h3>
           
-          <button type="submit" class="btn btn-primary">Solicitar Simulación</button>
+          <button onclick="clickSelecCredito()" id="solicitarCredito" type="button" class="btn btn-primary">Solicitar Simulación</button>
           <hr>`;
         listaSimulaciones.innerHTML += cardSimulaciones;
 

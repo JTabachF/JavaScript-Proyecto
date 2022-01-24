@@ -68,7 +68,7 @@ function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjet
 		  <h5 class="card-title">${nombreTarjetaVisa}</h5>
 		  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra tarjeta ${nombreTarjetaVisa} con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
 		  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-		  <button onclick="clickAnimacion1()" type="button" id="solicitarTarjetaa" class="btn btn-primary">Solicitar Tarjeta</button>
+		  <button onclick="clickAnimacionTarjeta1()" type="button" id="solicitarTarjetaa" class="btn btn-primary">Solicitar Tarjeta</button>
 		</div>
 	  </div>
 	</div>
@@ -79,7 +79,7 @@ function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjet
 		  <h5 class="card-title">${nombreTarjetaMastercard}</h5>
 		  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra ${nombreTarjetaMastercard} con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
 		  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-		  <button onclick="clickAnimacion2()" type="button" id="solicitarTarjetab" class="btn btn-primary">Solicitar Tarjeta</button>
+		  <button onclick="clickAnimacionTarjeta2()" type="button" id="solicitarTarjetab" class="btn btn-primary">Solicitar Tarjeta</button>
 		</div>
 	  </div>
 	</div>
@@ -90,7 +90,7 @@ function stringTarjeta (nombreTarjetaVisa, nombreTarjetaMastercard, nombreTarjet
 		  <h5 class="card-title">${nombreTarjetaAmerican}</h5>
 		  <p class="card-text">Estimado <strong>${inputNombre.value}</strong>, por su renta de <strong>$ ${inputRenta.value}</strong>, puede acceder a nuestra ${nombreTarjetaAmerican} con un cupo de <strong>$ ${inputRenta.value*0.4}</strong>.</p>
 		  <p class="card-text">Si está de acuerdo con esta propuesta, favor de aceptar en el siguiente botón</p>
-		  <button onclick="clickAnimacion3()" type="button" id="solicitarTarjetac" class="btn btn-primary">Solicitar Tarjeta</button>
+		  <button onclick="clickAnimacionTarjeta3()" type="button" id="solicitarTarjetac" class="btn btn-primary">Solicitar Tarjeta</button>
 		</div>
 	  </div>
 	</div>
